@@ -1,0 +1,3 @@
+test_cover_file:
+	go test -v -coverprofile=cover_file.out -coverpkg=./... ./...
+	go tool cover -html=cover_file.out -o cover_file.html
